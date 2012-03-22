@@ -82,6 +82,29 @@ public abstract class DB
 	}
 
 	/**
+	 * Starts a new transaction. All operations performed until
+	 * abortTransaction() or commitTransaction() are called belong to the same
+	 * transaction.
+	 */
+	public int startTransaction() {
+		return 0;
+	}
+
+	/**
+	 * Commits the current transaction.
+	 */
+	public int commitTransaction() {
+		return 0;
+	}
+
+	/**
+	 * Aborts the current transaction.
+	 */
+	public int abortTransaction() {
+		return 0;
+	}
+
+	/**
 	 * Read a record from the database. Each field/value pair from the result will be stored in a HashMap.
 	 *
 	 * @param table The name of the table
